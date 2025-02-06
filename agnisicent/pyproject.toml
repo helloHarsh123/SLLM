@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agniscient"
+version = "0.1.0"
+authors = [
+  { name="Agniscient" },
+]
+description = "Secure LLM interaction wrapper with PII protection"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "openai",
+    "presidio-analyzer",
+    "presidio-anonymizer",
+    "sqlalchemy",
+    "cryptography",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/agniscient/agniscient"
