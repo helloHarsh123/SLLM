@@ -1,1 +1,3 @@
 .env
+*.pyc
+secure_llm/__pycache__
