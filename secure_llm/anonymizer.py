@@ -28,6 +28,7 @@ class PromptAnonymizer:
         for result in analyzer_results:
             original = text[result.start:result.end]
             anonymized = f"<{result.entity_type}_{len(self._mapping)}>"
+            anonymized_text[result.start:result.end]=anonymized
             self._mapping[anonymized] = original
             self._reverse_mapping[original] = anonymized
             

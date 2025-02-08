@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agniscient"
-version = "0.1.0"
+version = "0.1.1.0.3"
 authors = [
   { name="Agniscient" },
 ]
@@ -17,6 +17,9 @@ dependencies = [
     "presidio-anonymizer",
     "sqlalchemy",
     "cryptography",
+    "langchain-experimental",
+    "faker",
+    "spacy"
 ]
 
 [project.urls]

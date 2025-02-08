@@ -1,3 +1,4 @@
 .env
 *.pyc
 secure_llm/__pycache__
+dist
